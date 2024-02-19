@@ -1,9 +1,9 @@
 export const config = {
-  name: 'Hamish Williams',
-  role: 'Designer',
-  disciplines: ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'],
+  name: 'Abhimanyu Kumawat',
+  role: 'Senior Software',
+  disciplines: ['Developer', 'Tester', 'Designer'],
   url: 'https://hamishw.com',
-  twitter: '@hamishMW',
-  figma: '@Hamish',
-  github: 'HamishMW',
+  twitter: '@twitterHandle',
+  figma: '@figmaHandle',
+  github: 'AbhiKumawat',
 };

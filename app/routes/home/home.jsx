@@ -41,7 +41,7 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
+    title: 'Senior Software Developer',
     description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
   });
 };
@@ -103,13 +103,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Designing the future of Indian Clothing"
+        description="Pahhal seamlessly blends traditional Indian attire like kurtas, lehengas, and shararas with contemporary flair, redefining elegance for the modern era"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="/projects/pahhal"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Pahhal',
           textures: [
             {
               srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
