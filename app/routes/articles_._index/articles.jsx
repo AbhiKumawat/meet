@@ -18,7 +18,7 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
   const [hovered, setHovered] = useState(false);
   const [dateTime, setDateTime] = useState(null);
   const reduceMotion = useReducedMotion();
-  const { title, abstract, date, featured, banner } = frontmatter;
+  const { title, abstract, date, featured, banner, location } = frontmatter;
 
   useEffect(() => {
     setDateTime(formatDate(date));
@@ -72,12 +72,23 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
             {title}
           </Heading>
           <Text size={featured ? 'l' : 's'} as="p">
+            {location}
+          </Text>
+          <Text size={featured ? 'l' : 's'} as="p">
             {abstract}
           </Text>
           <div className={styles.postFooter}>
-            <Button secondary iconHoverShift icon="chevron-right" as="div">
-              Read article
-            </Button>
+            {featured && !!banner && (
+              <Button secondary iconHoverShift as="div">
+                Download CV
+              </Button>
+            )}
+            {!featured && banner && (
+              <Button secondary iconHoverShift icon="chevron-right" as="div">
+                See more
+              </Button>
+            )}
+
             <Text className={styles.timecode} size="s">
               {timecode}
             </Text>
