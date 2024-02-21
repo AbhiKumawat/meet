@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "meet",
   "homepage": "",
   "description": "Portfolio site for Abhi Kumawat",
   "author": "Abhi Kumawat",
@@ -10,7 +10,7 @@
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
-    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio",
+    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name meet",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "deploy:storybook": "wrangler pages deploy ./storybook-static --project-name portfolio-storybook --branch main"
