@@ -1,1 +1,0 @@
-import{j as n}from"./jsx-runtime-DexIYAB0.js";import{u as r}from"./index-L_4ix5aQ.js";function o(t){return n.jsx(n.Fragment,{})}function a(t={}){const{wrapper:e}={...r(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(o,{...t})}):o()}export{a as default};
