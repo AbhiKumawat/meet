@@ -21,7 +21,7 @@ export async function getPosts() {
       };
     })
   );
-  console.log('Returning posts: ', posts);
+  // console.log('Returning posts: ', posts);
   return sortBy(posts, post => post.frontmatter.date, 'desc');
 }
 

@@ -68,7 +68,7 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
           <div className={styles.postDetails}>
             <div aria-hidden className={styles.postDate}>
               <Divider notchWidth="64px" notchHeight="8px" />
-              {dateTime}
+              {date}
             </div>
             <Heading as="h2" level={featured ? 2 : 4}>
               {title}
@@ -89,13 +89,13 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
               )}
               {!featured && banner && (
                 <Button secondary iconHoverShift icon="chevron-right" as="div">
-                  See more
+                  Read more about this Work Experience
                 </Button>
               )}
 
-              <Text className={styles.timecode} size="s">
+              {/* <Text className={styles.timecode} size="s">
                 {timecode}
-              </Text>
+              </Text> */}
             </div>
           </div>
         </RouterLink>
@@ -131,9 +131,9 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
                 </Button>
               )}
 
-              <Text className={styles.timecode} size="s">
+              {/* <Text className={styles.timecode} size="s">
                 {timecode}
-              </Text>
+              </Text> */}
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ function SkeletonPost({ index }) {
         <div className={styles.postDetails}>
           <div aria-hidden className={styles.postDate}>
             <Divider notchWidth="64px" notchHeight="8px" />
-            Coming soon...
+            Projects coming soon...
           </div>
           <Heading
             className={styles.skeletonBone}
@@ -176,10 +176,10 @@ function SkeletonPost({ index }) {
           />
           <div className={styles.postFooter}>
             <Button secondary iconHoverShift icon="chevron-right" as="div">
-              See more
+              Read more
             </Button>
             <Text className={styles.timecode} size="s">
-              00:00:00:00
+              00/00/0000
             </Text>
           </div>
         </div>

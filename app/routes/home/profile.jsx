@@ -22,9 +22,8 @@ const ProfileText = ({ visible, titleId }) => (
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I’m Abhi, currently I live in USA, NJ working as a Senior Software Engineer. I build
-      and optimize modern enterprise applications and API platforms using Node.js,
-      JavaScript, TypeScript, and other technologies. I leverage cloud computing services
-      such as AWS Lambda and Serverless to create scalable and reliable solutions.
+      and optimize modern enterprise applications and API platforms using latest
+      technologies to create scalable and reliable solutions.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I like to play video games. I’m always open for hearing about new
