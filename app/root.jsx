@@ -13,7 +13,6 @@ import { createCookieSessionStorage, json } from '@remix-run/cloudflare';
 import { ThemeProvider, themeStyles } from '~/components/theme-provider';
 import GothamBook from '~/assets/fonts/gotham-book.woff2';
 import GothamMedium from '~/assets/fonts/gotham-medium.woff2';
-import { useEffect } from 'react';
 import { Error } from '~/layouts/error';
 import { VisuallyHidden } from '~/components/visually-hidden';
 import { Navbar } from '~/layouts/navbar';
@@ -43,7 +42,6 @@ export const links = () => [
   { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
   { rel: 'shortcut_icon', href: '/shortcut.png', type: 'image/png', sizes: '64x64' },
   { rel: 'apple-touch-icon', href: '/icon-256.png', sizes: '256x256' },
-  { rel: 'author', href: '/humans.txt', type: 'text/plain' },
 ];
 
 export const loader = async ({ request, context }) => {
@@ -77,12 +75,6 @@ export const loader = async ({ request, context }) => {
   );
 };
 
-const repoPrompt = `
-__  __  __
-\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215
-\n\nTaking a peek huh? Check out the source code: https://github.com/HamishMW/portfolio
-`;
-
 export default function App() {
   let { canonicalUrl, theme } = useLoaderData();
   const fetcher = useFetcher();
@@ -98,10 +90,6 @@ export default function App() {
       { action: '/api/set-theme', method: 'post' }
     );
   }
-
-  useEffect(() => {
-    console.info(`${repoPrompt}\n\n`);
-  }, []);
 
   return (
     <html lang="en">

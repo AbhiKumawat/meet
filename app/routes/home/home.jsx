@@ -4,9 +4,9 @@ import gamestackTexture2 from '~/assets/gamestack-list.jpg';
 import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
+// import sliceTextureLarge from '~/assets/slice-app-large.jpg';
+// import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
+// import sliceTexture from '~/assets/slice-app.jpg';
 import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
@@ -52,11 +52,11 @@ export const Home = () => {
   const intro = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
-  const projectThree = useRef();
+  // const projectThree = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -98,39 +98,20 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+
       <ProjectSummary
         id="project-1"
+        alternate
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of Indian Clothing"
-        description="Pahhal seamlessly blends traditional Indian attire like kurtas, lehengas, and shararas with contemporary flair, redefining elegance for the modern era"
-        buttonText="View project"
-        buttonLink="/projects/pahhal"
-        model={{
-          type: 'laptop',
-          alt: 'Pahhal',
-          textures: [
-            {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-2"
-        alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Work Experience"
+        description="Dive into my coding odyssey and technical prowess showcased in this section, reflecting my journey of innovation and impactful contributions"
+        buttonText="Work Experience"
+        buttonLink="/articles"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'App Work Exp Scr',
           textures: [
             {
               srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
@@ -143,15 +124,37 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
+        id="project-2"
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={2}
+        title="Designing the future of Indian Clothing"
+        description="Pahhal seamlessly blends traditional Indian attire like kurtas, lehengas, and shararas with contemporary flair, redefining elegance for the modern era"
+        buttonText="Side project"
+        buttonLink="/projects/pahhal"
+        model={{
+          type: 'laptop',
+          alt: 'Pahhal',
+          textures: [
+            {
+              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
+              placeholder: sprTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+
+      {/* <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        title="Check out my Work Experience"
+        description="Some Descriptive text for work experience"
+        buttonText="Work Experience"
+        buttonLink="/articles"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -162,7 +165,7 @@ export const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

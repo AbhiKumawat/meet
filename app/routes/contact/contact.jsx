@@ -15,8 +15,8 @@ import { cssProps, msToNum, numToMs } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
 import { Form, useActionData, useNavigation } from '@remix-run/react';
 import { json } from '@remix-run/cloudflare';
-import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 import styles from './contact.module.css';
+import axios from 'axios';
 
 export const meta = () => {
   return baseMeta({
@@ -31,14 +31,6 @@ const MAX_MESSAGE_LENGTH = 4096;
 const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
 
 export async function action({ context, request }) {
-  const ses = new SESClient({
-    region: 'us-east-1',
-    credentials: {
-      accessKeyId: context.env.AWS_ACCESS_KEY_ID,
-      secretAccessKey: context.env.AWS_SECRET_ACCESS_KEY,
-    },
-  });
-
   const formData = await request.formData();
   const isBot = String(formData.get('name'));
   const email = String(formData.get('email'));
@@ -69,27 +61,8 @@ export async function action({ context, request }) {
     return json({ errors });
   }
 
-  // Send email via Amazon SES
-  await ses.send(
-    new SendEmailCommand({
-      Destination: {
-        ToAddresses: [context.env.EMAIL],
-      },
-      Message: {
-        Body: {
-          Text: {
-            Data: `From: ${email}\n\n${message}`,
-          },
-        },
-        Subject: {
-          Data: `Portfolio message from ${email}`,
-        },
-      },
-      Source: `Portfolio <${context.env.FROM_EMAIL}>`,
-      ReplyToAddresses: [email],
-    })
-  );
-
+  await axios.post('https://formspree.io/f/xyyrwqyg', formData);
+  console.log('Succefully submit', formData);
   return json({ success: true });
 }
 
@@ -128,7 +101,9 @@ export const Contact = () => {
             />
             {/* Hidden honeypot field to identify bots */}
             <Input
-              className={styles.botkiller}
+              required
+              className={styles.name}
+              style={getDelay(tokens.base.durationS, initDelay)}
               label="Name"
               name="name"
               maxLength={MAX_EMAIL_LENGTH}

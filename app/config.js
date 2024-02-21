@@ -1,9 +1,10 @@
 export const config = {
   name: 'Abhimanyu Kumawat',
   role: 'Senior Software',
-  disciplines: ['Developer', 'Tester', 'Designer'],
-  url: 'https://hamishw.com',
+  disciplines: ['Developer', 'Architecture', 'Designer', 'Tester'],
+  url: '',
   twitter: '@twitterHandle',
   figma: '@figmaHandle',
   github: 'AbhiKumawat',
+  linkedIn: 'abhimanyu-kumawat-37358a155',
 };

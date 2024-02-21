@@ -58,5 +58,9 @@
   "play": {
     "width": 24,
     "height": 24
+  },
+  "linkedIn": {
+    "width": 24,
+    "height": 24
   }
 }

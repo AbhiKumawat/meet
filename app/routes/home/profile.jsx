@@ -26,9 +26,7 @@ const ProfileText = ({ visible, titleId }) => (
       JavaScript, Java, TypeScript, and other technologies. I leverage cloud computing
       services such as AWS Lambda and Serverless to create scalable and reliable
       solutions, and implement CI/CD practices for efficient deployment workflows. Being
-      comfortable with code allows me to rapidly prototype and validate experiences. If
-      you’re interested in the tools and software I use check out my{' '}
-      <Link href="/uses">uses page</Link>.
+      comfortable with code allows me to rapidly prototype and validate experiences.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I like to play video games. I’m always down for hearing about new
@@ -88,7 +86,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   width={960}
                   height={1280}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                  alt="Me"
                 />
                 <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
                   <use href={`${katakana}#katakana-profile`} />
