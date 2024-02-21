@@ -15,7 +15,7 @@ import { cssProps, msToNum, numToMs } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
 import { Form, useActionData, useNavigation } from '@remix-run/react';
 import { json } from '@remix-run/cloudflare';
-import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
+// import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
 import styles from './contact.module.css';
 import axios from 'axios';
 
@@ -105,7 +105,7 @@ export const Contact = () => {
             />
             {/* Hidden honeypot field to identify bots */}
             <Input
-              className={styles.botkiller}
+              className={styles.botkiller} // need to change to .name
               label="Name"
               name="name"
               maxLength={MAX_EMAIL_LENGTH}
