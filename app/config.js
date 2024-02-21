@@ -4,6 +4,6 @@ export const config = {
   disciplines: ['Engineer','Developer','Tester'],
   url: 'https://hamishw.com',
   twitter: '@twitterHandle',
-  figma: 'jonathanzhuu',
+  linkedin: 'jonathanzhuu',
   github: 'Jonathanz4344',
 };

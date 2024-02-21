@@ -21,13 +21,11 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Abhi, currently I live in USA, NJ working as a Senior Software Engineer. I build
-      and optimize modern enterprise applications and API platforms using Node.js,
-      JavaScript, Java, TypeScript, and other technologies. I leverage cloud computing
-      services such as AWS Lambda and Serverless to create scalable and reliable
-      solutions, and implement CI/CD practices for efficient deployment workflows. Being
-      comfortable with code allows me to rapidly prototype and validate experiences. If
-      you’re interested in the tools and software I use check out my{' '}
+      I’m Jonathan, a proactive 3rd-year Software Engineering student at Rochester Institute of Technology, currently a full-time software engineer. 
+      My passion lies in crafting and refining modern enterprise applications, API platforms, and backend systems using Node.js, React.js, Python, 
+      SQL, and more. I specialize in leveraging cloud computing services like AWS EC2, S3, and RDS to create scalable solutions, implementing CI/CD practices 
+      with tools like Jenkins Pipeline for efficient deployment workflows. My proficiency in code enables me to swiftly prototype and validate user experiences,
+      delivering innovative solutions with agility and precision. If you’re interested in the tools and software I use check out my{' '}
       <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">

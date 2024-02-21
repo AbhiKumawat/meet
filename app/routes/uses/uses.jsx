@@ -35,7 +35,7 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          description=" *Change* A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -44,7 +44,7 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    <Link href="https://www.figma.com">Figma</Link> is my primary tool for
+                    <Link href="https://www.figma.com">*Change* Figma</Link> is my primary tool for
                     UI design these days. Made the switch from Sketch in 2020 and haven’t
                     looked back. I’ve also created{' '}
                     <Link href="https://www.figma.com/@hamish">a few plugins</Link> that

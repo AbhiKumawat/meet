@@ -1,8 +1,8 @@
 import backgroundSprLarge from '~/assets/spr-background-large.jpg';
 import backgroundSprPlaceholder from '~/assets/spr-background-placeholder.jpg';
-import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
-import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
-import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
+// import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
+// import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
+// import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
 import backgroundSpr from '~/assets/spr-background.jpg';
 import imageSprComponentsDarkLarge from '~/assets/spr-components-dark-large.png';
 import imageSprComponentsDarkPlaceholder from '~/assets/spr-components-dark-placeholder.png';
@@ -22,27 +22,27 @@ import imageSprLessonBuilderDark from '~/assets/spr-lesson-builder-dark.jpg';
 import imageSprLessonBuilderLightLarge from '~/assets/spr-lesson-builder-light-large.jpg';
 import imageSprLessonBuilderLightPlaceholder from '~/assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from '~/assets/spr-lesson-builder-light.jpg';
-import videoSprMotionLarge from '~/assets/spr-motion-large.mp4';
-import videoSprMotionPlaceholder from '~/assets/spr-motion-placeholder.jpg';
-import videoSprMotion from '~/assets/spr-motion.mp4';
-import imageSprSchema1DarkLarge from '~/assets/spr-schema-1-dark-large.png';
-import imageSprSchema1DarkPlaceholder from '~/assets/spr-schema-1-dark-placeholder.png';
-import imageSprSchema1Dark from '~/assets/spr-schema-1-dark.png';
-import imageSprSchema1LightLarge from '~/assets/spr-schema-1-light-large.png';
-import imageSprSchema1LightPlaceholder from '~/assets/spr-schema-1-light-placeholder.png';
-import imageSprSchema1Light from '~/assets/spr-schema-1-light.png';
-import imageSprSchema2DarkLarge from '~/assets/spr-schema-2-dark-large.png';
-import imageSprSchema2DarkPlaceholder from '~/assets/spr-schema-2-dark-placeholder.png';
-import imageSprSchema2Dark from '~/assets/spr-schema-2-dark.png';
-import imageSprSchema2LightLarge from '~/assets/spr-schema-2-light-large.png';
-import imageSprSchema2LightPlaceholder from '~/assets/spr-schema-2-light-placeholder.png';
-import imageSprSchema2Light from '~/assets/spr-schema-2-light.png';
-import imageSprStoryboarderDarkLarge from '~/assets/spr-storyboarder-dark-large.png';
-import imageSprStoryboarderDarkPlaceholder from '~/assets/spr-storyboarder-dark-placeholder.png';
-import imageSprStoryboarderDark from '~/assets/spr-storyboarder-dark.png';
-import imageSprStoryboarderLightLarge from '~/assets/spr-storyboarder-light-large.png';
-import imageSprStoryboarderLightPlaceholder from '~/assets/spr-storyboarder-light-placeholder.png';
-import imageSprStoryboarderLight from '~/assets/spr-storyboarder-light.png';
+// import videoSprMotionLarge from '~/assets/spr-motion-large.mp4';
+// import videoSprMotionPlaceholder from '~/assets/spr-motion-placeholder.jpg';
+// import videoSprMotion from '~/assets/spr-motion.mp4';
+// import imageSprSchema1DarkLarge from '~/assets/spr-schema-1-dark-large.png';
+// import imageSprSchema1DarkPlaceholder from '~/assets/spr-schema-1-dark-placeholder.png';
+// import imageSprSchema1Dark from '~/assets/spr-schema-1-dark.png';
+// import imageSprSchema1LightLarge from '~/assets/spr-schema-1-light-large.png';
+// import imageSprSchema1LightPlaceholder from '~/assets/spr-schema-1-light-placeholder.png';
+// import imageSprSchema1Light from '~/assets/spr-schema-1-light.png';
+// import imageSprSchema2DarkLarge from '~/assets/spr-schema-2-dark-large.png';
+// import imageSprSchema2DarkPlaceholder from '~/assets/spr-schema-2-dark-placeholder.png';
+// import imageSprSchema2Dark from '~/assets/spr-schema-2-dark.png';
+// import imageSprSchema2LightLarge from '~/assets/spr-schema-2-light-large.png';
+// import imageSprSchema2LightPlaceholder from '~/assets/spr-schema-2-light-placeholder.png';
+// import imageSprSchema2Light from '~/assets/spr-schema-2-light.png';
+// import imageSprStoryboarderDarkLarge from '~/assets/spr-storyboarder-dark-large.png';
+// import imageSprStoryboarderDarkPlaceholder from '~/assets/spr-storyboarder-dark-placeholder.png';
+// import imageSprStoryboarderDark from '~/assets/spr-storyboarder-dark.png';
+// import imageSprStoryboarderLightLarge from '~/assets/spr-storyboarder-light-large.png';
+// import imageSprStoryboarderLightPlaceholder from '~/assets/spr-storyboarder-light-placeholder.png';
+// import imageSprStoryboarderLight from '~/assets/spr-storyboarder-light.png';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import { Link } from '~/components/link';
@@ -54,7 +54,7 @@ import {
   ProjectHeader,
   ProjectImage,
   ProjectSection,
-  ProjectSectionColumns,
+  // ProjectSectionColumns,
   ProjectSectionContent,
   ProjectSectionHeading,
   ProjectSectionText,
@@ -63,7 +63,7 @@ import {
 import { baseMeta } from '~/utils/meta';
 import { Suspense, lazy, useMemo } from 'react';
 import { media } from '~/utils/style';
-import styles from './pahhal.module.css';
+import styles from './citywide.module.css';
 
 const Earth = lazy(() => import('./earth').then(module => ({ default: module.Earth })));
 const EarthSection = lazy(() =>
@@ -72,8 +72,9 @@ const EarthSection = lazy(() =>
 
 const title = 'Designing the future of Indian Clothing';
 const description =
-  'I crafted an end-to-end system for Pahhal, integrating a Shopify backend to streamline operations and enhance customer experience, ensuring seamless management of their online platform.';
+  '*Change* I crafted an end-to-end system for Citywide Eye Care, integrating a Shopify backend to streamline operations and enhance customer experience, ensuring seamless management of their online platform.';
 const roles = [
+  '*Change*',
   'Back-End Inventory Management',
   'UX and UI Design',
   'Front End Development',
@@ -84,7 +85,7 @@ export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
 };
 
-export const Pahhal = () => {
+export const Citywide = () => {
   const { theme, toggleTheme } = useTheme();
   const isDark = theme === 'dark';
   const themes = ['dark', 'light'];
@@ -105,7 +106,7 @@ export const Pahhal = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.pahhal.com/"
+          url="https://citywideeyecare.business.site/" // add url
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -134,6 +135,7 @@ export const Pahhal = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
+              *Change*
               One common problem faced by Indian clothing brands in the USA relates to a
               perceived imbalance between pricing and quality. While some brands offer
               lower-priced items, they may compromise on quality, leading to skepticism
@@ -175,16 +177,17 @@ export const Pahhal = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>The Shopify Design System</ProjectSectionHeading>
               <ProjectSectionText>
+                *Change*
                 Shopify can play a crucial role in addressing the pricing and quality
-                challenges faced by Pahhal in the US market through its robust inventory
-                management and order fulfillment features. By utilizing Shopify's
-                platform, Pahhal can efficiently manage its inventory levels, ensuring
+                challenges faced by Citywide in the US market through its robust inventory
+                management and order fulfillment features. By utilizing Shopify’s
+                platform, Citywidecan efficiently manage its inventory levels, ensuring
                 that only high-quality products are stocked and readily available for
-                customers. Additionally, Shopify's order management system can streamline
-                the fulfillment process, allowing Pahhal to fulfill orders promptly and
+                customers. Additionally, Shopify’s order management system can streamline
+                the fulfillment process, allowing Citywide to fulfill orders promptly and
                 accurately, thereby enhancing customer satisfaction and trust. Moreover,
-                Shopify's analytics tools can provide valuable insights into sales trends
-                and customer preferences, enabling Pahhal to make informed decisions about
+                Shopify’s analytics tools can provide valuable insights into sales trends
+                and customer preferences, enabling Citywide to make informed decisions about
                 pricing strategies and product offerings to maintain a competitive edge
                 while delivering superior quality.
               </ProjectSectionText>
@@ -269,10 +272,11 @@ export const Pahhal = () => {
                         Connecting people all across the globe with our modern touch
                       </ProjectSectionHeading>
                       <ProjectSectionText>
-                        Shopify offers Pahhal a powerful platform to create an immersive
+                        *Change*
+                        Shopify offers Citywide a powerful platform to create an immersive
                         shopping experience for customers worldwide seeking modern Indian
                         clothing. With customizable storefronts and seamless integration
-                        of diverse payment gateways, Pahhal can showcase its range of
+                        of diverse payment gateways, Citywide can showcase its range of
                         attire, including kurtas, lehengas, and shararas, in an engaging
                         and user-friendly manner.
                       </ProjectSectionText>
@@ -297,7 +301,7 @@ export const Pahhal = () => {
                         Customizable Storefronts
                       </ProjectSectionHeading>
                       <ProjectSectionText>
-                        Shopify provides Pahhal with the flexibility to design captivating
+                        Shopify provides Citywide with the flexibility to design captivating
                         storefronts that resonate with customers worldwide, showcasing
                         their diverse range of modern Indian clothing in an appealing
                         manner tailored to different cultural preferences and tastes.
@@ -326,7 +330,7 @@ export const Pahhal = () => {
                         Multilingual Capabilities
                       </ProjectSectionHeading>
                       <ProjectSectionText>
-                        With Shopify's multilingual capabilities, Pahhal can easily
+                        With Shopify’s multilingual capabilities, Citywide can easily
                         translate their website content into multiple languages, breaking
                         down language barriers and ensuring that customers from various
                         regions can navigate the site and make purchases with ease.
@@ -361,10 +365,10 @@ export const Pahhal = () => {
                         Global Marketing and Analytics
                       </ProjectSectionHeading>
                       <ProjectSectionText>
-                        Shopify equips Pahhal with powerful marketing tools and analytics
+                        Shopify equips Citywide with powerful marketing tools and analytics
                         capabilities to target and analyze customer behavior across the
                         globe. Through targeted marketing campaigns and data-driven
-                        insights, Pahhal can effectively reach and engage with customers
+                        insights, Citywide can effectively reach and engage with customers
                         in different regions, optimizing their marketing efforts and
                         driving sales growth.
                       </ProjectSectionText>
@@ -386,8 +390,8 @@ export const Pahhal = () => {
             <ProjectTextRow center centerMobile noMargin>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Ultimately the project was successful and was launched by CEO of Pahhal{' '}
-                <Link href="https://www.google.com/search?q=pahhal&sca_esv=fe09e3d337d2e27f&sxsrf=ACQVn0-H3J4OGxvEWVTh6vhsvIf7fCVmWw%3A1708382416086&source=hp&ei=0NjTZYzKAq-i5NoP-8uygA8&iflsig=ANes7DEAAAAAZdPm4DScvdTsLLp6k9LGfIUqVbVopI1-&ved=0ahUKEwiM8rG4vLiEAxUvEVkFHfulDPAQ4dUDCBc&uact=5&oq=pahhal&gs_lp=Egdnd3Mtd2l6IgZwYWhoYWwyChAjGIAEGIoFGCcyBBAjGCdIswpQ-wNY2whwAXgAkAEAmAFxoAGQBKoBAzMuM7gBA8gBAPgBAagCCsICBxAjGOoCGCfCAhcQLhiABBiKBRiRAhixAxiDARjHARjRA8ICCxAAGIAEGIoFGJECwgIOEAAYgAQYigUYsQMYgwHCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhjHARixAxjRAxiABMICERAuGIMBGMcBGLEDGNEDGIAEwgIIEC4YgAQYsQPCAg4QLhiABBixAxjHARjRA8ICDhAuGIAEGMcBGK8BGI4FwgILEC4YgAQYsQMYgwHCAg4QLhiABBixAxiDARjUAsICBRAAGIAEwgILEC4YgAQYxwEYrwHCAgcQABiABBgKwgIKEC4YChixAxiABMICEBAuGIAEGMcBGK8BGI4FGArCAhAQLhiABBgKGMcBGK8BGI4FwgIKEAAYgAQYChixA8ICEhAuGAMYChjHARivARiYBRieBcICExAuGAoYgwEYxwEYsQMY0QMYgATCAg0QABiABBgKGLEDGIMB&sclient=gws-wiz">
+                Ultimately the project was successful and was launched by CEO of Citywide{' '}
+                <Link href="https://www.google.com/search?q=citywide+eye+care&rlz=1C1CHBF_enUS1092US1092&oq=city&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg7MgwIAhBFGDkYyQMYgAQyCAgDEEUYJxg7MgYIBBBFGEAyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxNTI4ajBqOagCALACAA&sourceid=chrome&ie=UTF-8">
                   as shown in google
                 </Link>{' '}
                 to become a next generation Indian Clothing platform.

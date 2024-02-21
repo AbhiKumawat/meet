@@ -41,7 +41,7 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Senior Software Developer',
+    title: 'Associate Software Developer',
     description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
   });
 };
@@ -103,13 +103,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of Indian Clothing"
-        description="Pahhal seamlessly blends traditional Indian attire like kurtas, lehengas, and shararas with contemporary flair, redefining elegance for the modern era"
+        title="Citywide Eye Care" 
+        description="Citywide Eye Care offers comprehensive optometric services for patients of all ages, specializing in both medical and vision care."
         buttonText="View project"
-        buttonLink="/projects/pahhal"
+        buttonLink="/projects/citywide"
         model={{
           type: 'laptop',
-          alt: 'Pahhal',
+          alt: 'Citywide',
           textures: [
             {
               srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
