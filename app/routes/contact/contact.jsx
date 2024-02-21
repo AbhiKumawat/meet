@@ -62,7 +62,6 @@ export async function action({ context, request }) {
   }
 
   await axios.post('https://formspree.io/f/xyyrwqyg', formData);
-  console.log('Succefully submit', formData);
   return json({ success: true });
 }
 
@@ -101,8 +100,7 @@ export const Contact = () => {
             />
             {/* Hidden honeypot field to identify bots */}
             <Input
-              required
-              className={styles.name}
+              className={styles.botkiller}
               style={getDelay(tokens.base.durationS, initDelay)}
               label="Name"
               name="name"
@@ -127,7 +125,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationS, initDelay)}
               autoComplete="off"
-              label="Message"
+              label="Message (add your name before message)"
               name="message"
               maxLength={MAX_MESSAGE_LENGTH}
               {...message}
