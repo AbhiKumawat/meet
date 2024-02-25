@@ -61,7 +61,16 @@ export async function action({ context, request }) {
     return json({ errors });
   }
 
-  await axios.post('https://formspree.io/f/xyyrwqyg', formData);
+  // await axios.post('https://formspree.io/f/xyyrwqyg', formData);
+  await fetch('https://formspree.io/f/xyyrwqyg', {
+    Method: 'POST',
+    Headers: {
+      Accept: 'application.json',
+      'Content-Type': 'application/json',
+    },
+    Body: formData,
+    Cache: 'default',
+  });
   return json({ success: true });
 }
 
