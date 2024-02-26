@@ -16,7 +16,6 @@ import { baseMeta } from '~/utils/meta';
 import { Form, useActionData, useNavigation } from '@remix-run/react';
 import { json } from '@remix-run/cloudflare';
 import styles from './contact.module.css';
-import axios from 'axios';
 
 export const meta = () => {
   return baseMeta({
@@ -61,15 +60,9 @@ export async function action({ context, request }) {
     return json({ errors });
   }
 
-  // await axios.post('https://formspree.io/f/xyyrwqyg', formData);
   await fetch('https://formspree.io/f/xyyrwqyg', {
-    Method: 'POST',
-    Headers: {
-      Accept: 'application.json',
-      'Content-Type': 'application/json',
-    },
-    Body: formData,
-    Cache: 'default',
+    method: 'POST',
+    body: formData,
   });
   return json({ success: true });
 }
