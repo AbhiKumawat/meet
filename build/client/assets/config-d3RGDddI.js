@@ -1,0 +1,1 @@
+const t="Abhimanyu Kumawat",e="Senior Software",n=["Developer","Architecture","Designer","Illustrator","Tester"],i="",a="@twitterHandle",o="@figmaHandle",r="AbhiKumawat",s="abhimanyu-kumawat-37358a155",c={name:t,role:e,disciplines:n,url:i,twitter:a,figma:o,github:r,linkedIn:s};export{c};

@@ -1,4 +1,4 @@
-import { s, i, l, j, k, h, p, o } from "./assets/server-build-BEmyOu0u.js";
+import { s, i, j, o, k, l, h, p, q } from "./assets/server-build-BpJf7bG5.js";
 import "react/jsx-runtime";
 import "@remix-run/react";
 import "isbot";
@@ -7,14 +7,14 @@ import "@remix-run/cloudflare";
 import "react";
 import "framer-motion";
 import "@mdx-js/react";
-import "axios";
 export {
   s as assets,
   i as assetsBuildDirectory,
-  l as entry,
-  j as future,
-  k as isSpaMode,
+  j as basename,
+  o as entry,
+  k as future,
+  l as isSpaMode,
   h as mode,
   p as publicPath,
-  o as routes
+  q as routes
 };
