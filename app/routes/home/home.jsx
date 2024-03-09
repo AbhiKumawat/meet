@@ -148,7 +148,7 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
+        title="Intune"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
         buttonText="View project"
         buttonLink="/projects/slice"

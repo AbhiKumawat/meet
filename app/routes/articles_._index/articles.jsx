@@ -56,7 +56,7 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
           />
         </div>
       )}
-      {!featured && banner && (
+      {banner && (
         <RouterLink
           unstable_viewTransition
           prefetch="intent"
@@ -83,7 +83,7 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
               {featured && !!banner && (
                 <a href={resumePDF} download="Resume" target="blank">
                   <Button secondary iconHoverShift as="div">
-                    Download CV
+                    View CV
                   </Button>
                 </a>
               )}
@@ -104,19 +104,19 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
       {featured && !!banner && (
         <div className={styles.postLink}>
           <div className={styles.postDetails}>
-            <div aria-hidden className={styles.postDate}>
+            {/* <div aria-hidden className={styles.postDate}>
               <Divider notchWidth="64px" notchHeight="8px" />
               {dateTime}
-            </div>
-            <Heading as="h2" level={featured ? 2 : 4}>
+            </div> */}
+            {/* <Heading as="h2" level={featured ? 2 : 4}>
               {title}
-            </Heading>
-            <Text size={featured ? 'l' : 's'} as="p">
+            </Heading> */}
+            {/* <Text size={featured ? 'l' : 's'} as="p">
               {location}
-            </Text>
-            <Text size={featured ? 'l' : 's'} as="p">
+            </Text> */}
+            {/* <Text size={featured ? 'l' : 's'} as="p">
               {abstract}
-            </Text>
+            </Text> */}
             <div className={styles.postFooter}>
               {featured && !!banner && (
                 <a href={resumePDF} download="Resume" target="blank">
@@ -125,11 +125,11 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
                   </Button>
                 </a>
               )}
-              {!featured && banner && (
+              {/* {!featured && banner && (
                 <Button secondary iconHoverShift icon="chevron-right" as="div">
                   See more
                 </Button>
-              )}
+              )} */}
 
               <Text className={styles.timecode} size="s">
                 {timecode}
