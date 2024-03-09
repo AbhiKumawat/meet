@@ -1,26 +1,26 @@
-import sliceAnnotationLarge from '~/assets/slice-annotation-large.png';
-import sliceAnnotationPlaceholder from '~/assets/slice-annotation-placeholder.png';
-import sliceAnnotation from '~/assets/slice-annotation.png';
-import sliceAppLarge from '~/assets/slice-app-large.jpg';
-import sliceAppPlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceApp from '~/assets/slice-app.jpg';
-import sliceBackgroundBarLarge from '~/assets/slice-background-bar-large.jpg';
-import sliceBackgroundBarPlaceholder from '~/assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from '~/assets/slice-background-bar.jpg';
+import sliceAnnotationLarge from '~/assets/intune-cart-large.png';
+import sliceAnnotationPlaceholder from '~/assets/intune-cart-placeholder.png';
+import sliceAnnotation from '~/assets/intune-cart.png';
+import sliceAppLarge from '~/assets/intune-first-image-large.jpg';
+import sliceAppPlaceholder from '~/assets/intune-first-image-placeholder.jpg';
+import sliceApp from '~/assets/intune-first-image.jpg';
+import sliceBackgroundBarLarge from '~/assets/intune-checkout-large.jpg';
+import sliceBackgroundBarPlaceholder from '~/assets/intune-checkout-placeholder.jpg';
+import sliceBackgroundBar from '~/assets/intune-checkout.jpg';
 import sliceBackgroundLarge from '~/assets/slice-background-large.jpg';
 import sliceBackgroundPlaceholder from '~/assets/slice-background-placeholder.jpg';
 import sliceBackground from '~/assets/slice-background.jpg';
-import sliceIrlPlaceholder from '~/assets/slice-irl-placeholder.jpg';
-import sliceIrl from '~/assets/slice-irl.jpg';
-import sliceSidebarAnnotationsLarge from '~/assets/slice-sidebar-annotations-large.png';
-import sliceSidebarAnnotationsPlaceholder from '~/assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from '~/assets/slice-sidebar-annotations.png';
-import sliceSidebarLayersLarge from '~/assets/slice-sidebar-layers-large.png';
-import sliceSidebarLayersPlaceholder from '~/assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from '~/assets/slice-sidebar-layers.png';
-import sliceSlidesLarge from '~/assets/slice-slides-large.jpg';
-import sliceSlidesPlaceholder from '~/assets/slice-slides-placeholder.jpg';
-import sliceSlides from '~/assets/slice-slides.jpg';
+import sliceIrlPlaceholder from '~/assets/intune-lesson-placeholder.jpg';
+import sliceIrl from '~/assets/intune-lesson.jpg';
+import sliceSidebarAnnotationsLarge from '~/assets/intune-admin-lesson-large.png';
+import sliceSidebarAnnotationsPlaceholder from '~/assets/intune-admin-lesson-placeholder.png';
+import sliceSidebarAnnotations from '~/assets/intune-admin-lesson.png';
+import sliceSidebarLayersLarge from '~/assets/intune-admin-product.png';
+import sliceSidebarLayersPlaceholder from '~/assets/intune-admin-product-placeholder.png';
+import sliceSidebarLayers from '~/assets/intune-admin-product.png';
+import sliceSlidesLarge from '~/assets/intune-product-large.jpg';
+import sliceSlidesPlaceholder from '~/assets/intune-product-placeholder.jpg';
+import sliceSlides from '~/assets/intune-product.jpg';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import {
@@ -130,7 +130,7 @@ export const Slice = () => {
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              srcSet={`${sliceSlides} 800w, ${sliceSlidesLarge} 1920w`}
+              srcSet={`${sliceSlides} 800w, ${sliceSlidesLarge} 19w`}
               width={800}
               height={500}
               placeholder={sliceSlidesPlaceholder}
